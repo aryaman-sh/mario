@@ -2,7 +2,7 @@
 Simple 2d world where the player can interact with the items in the world.
 """
 from tkinter import filedialog
-#heyyyy
+#heyyyyyyyyyy
 
 __author__ = "aryaman sharma"
 __date__ = ""
@@ -189,7 +189,12 @@ class MarioApp:
         self._view.pack()
         self.bind()
         self.menubar()
-
+        #Stats controller for changing the status bar.
+        #used in the function 'step'
+        self._health = self._player.get_health()
+        self._score = self._player.get_score()
+        self._status_bar = tk.Frame(self._master)
+        self.status_bar()
         # Wait for window to update before continuing
         master.update_idletasks()
         self.step()
@@ -257,6 +262,27 @@ class MarioApp:
         self._master.bind('<Right>', lambda event: self._move(500, 0))
         self._master.bind('<D>', lambda event: self._move(500, 0))
 
+    def status_bar(self):
+        self._status_bar.destroy()
+        self._status_bar = tk.Frame(self._master)
+        self._status_bar.pack(side = tk.BOTTOM)
+        healthbar_canvas = tk.Canvas(self._status_bar, width=1080, height=25, bg='black')
+        healthbar_canvas.pack(side="top")
+        healthbar_width = (self._player.get_health() / self._player.get_max_health()) * 1080
+        # set healthbar color
+        color_controller = healthbar_width / 1080
+        if color_controller >= 0.50:
+            color = 'Green'
+        elif 0.25 <= color_controller <= 0.50:
+            color = 'Orange'
+        elif color_controller < 0.25:
+            color = 'Red'
+        # Healthbar= shape:Rectangle
+        healthbar_canvas.create_rectangle(0, 25, healthbar_width, 0, fill=color)
+        # label to display score
+        w = tk.Label(self._status_bar, text='Score: ' + str(self._player.get_score()))
+        w.pack(side="bottom")
+
     def redraw(self):
         """Redraw all the entities in the game canvas."""
         self._view.delete(tk.ALL)
@@ -285,11 +311,24 @@ class MarioApp:
 
     def step(self):
         """Step the world physics and redraw the canvas."""
+        """SMOOTH OPERATOR ..... SMOOOOTH OPERATION"""
         data = (self._world, self._player)
         self._world.step(data)
         self.scroll()
         self.redraw()
         self._master.after(10, self.step)
+        #updates the status bar if change in health is detected
+        if self._player.get_health() == self._health:
+            pass
+        else:
+            self._health = self._player.get_health()
+            self.status_bar()
+        #updates the status bar if change in score is detected
+        if self._player.get_score() == self._score:
+            pass
+        else:
+            self._score = self._player.get_score()
+            self.status_bar()
 
         #Asking if players want to continue playing or end the game
         if self._player.get_health() == 0:

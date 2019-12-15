@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="964bff4d-a86f-4087-9aa7-21171382ecb1" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="964bff4d-a86f-4087-9aa7-21171382ecb1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1TxiNEDi0xMDsahuPndM6dqGxmQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -19,16 +32,6 @@
       <set>
         <option value="PythonConfigurationType" />
       </set>
-    </option>
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
     </option>
   </component>
   <component name="RunManager">
@@ -56,13 +59,25 @@
     </configuration>
   </component>
   <component name="ServiceViewManager">
-    <option name="allServicesViewState">
-      <serviceView>
-        <treeState>
-          <expand />
-          <select />
-        </treeState>
-      </serviceView>
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Python" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Python" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
     </option>
   </component>
   <component name="SvnConfiguration">
@@ -84,14 +99,41 @@
       <workItem from="1574527653326" duration="2647000" />
       <workItem from="1574687555845" duration="679000" />
       <workItem from="1574866074994" duration="37000" />
+      <workItem from="1576414402401" duration="4843000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="WindowStateProjectService">
+    <state x="525" y="150" width="860" height="814" key="CommitChangelistDialog2" timestamp="1576419160061">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="525" y="150" width="860" height="814" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1576419160061" />
+    <state width="1291" height="199" key="GridCell.Tab.0.bottom" timestamp="1576422810450">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1291" height="199" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1576422810450" />
+    <state width="1291" height="199" key="GridCell.Tab.0.center" timestamp="1576422810448">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1291" height="199" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1576422810448" />
+    <state width="1291" height="199" key="GridCell.Tab.0.left" timestamp="1576422810447">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1291" height="199" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1576422810447" />
+    <state width="1291" height="199" key="GridCell.Tab.0.right" timestamp="1576422810449">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1291" height="199" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1576422810449" />
+    <state x="616" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1576414423463">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="616" y="381" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1576414423463" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/a3_files$app.coverage" NAME="app Coverage Results" MODIFIED="1576422723943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/a3_files$a3_files.coverage" NAME="app Coverage Results" MODIFIED="1574409058437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/a3_files$app.coverage" NAME="app Coverage Results" MODIFIED="1574688180810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
